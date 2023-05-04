@@ -63,9 +63,3 @@ double MinElemen(double [] array)
     }
     return min;
 }
-
-// double DifferenceMaxMin()
-// {
-    
-//     double diff = max - min;
-// }
