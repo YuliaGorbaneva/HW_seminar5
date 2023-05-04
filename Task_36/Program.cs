@@ -12,7 +12,7 @@ void SummaMasiva()
     PrintNumbers(array);
    
     int sum = SummaOddIndex(array);
-    Console.WriteLine($"Сумма нечетных элементов массива = {sum}");
+    Console.WriteLine($"Сумма элементов с нечетными индексами = {sum}");
 }
 SummaMasiva();
 
@@ -38,9 +38,13 @@ int SummaOddIndex(int [] array)
     int sum = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        if (array[i] % 2 != 0)
+        if (i % 2 != 0)
         {
-           sum += array[i];
+           sum = sum + array[i];
+        }
+        if (array.Length == 1)
+        {
+            sum = array[i];
         }
     }
     return sum;
